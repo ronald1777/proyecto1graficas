@@ -61,20 +61,3 @@ E       -> posición inicial del jugador
 S       -> meta (dispara la pantalla de éxito)
 X       -> punto de aparición de un enemigo
 ```
-
-## Objetivos de la rúbrica cubiertos
-
-| Objetivo | Puntos | Implementación |
-|---|---|---|
-| Nivel jugable, sin atravesar paredes, sin crashear | requisito | Colisión eje por eje en `player.rs` |
-| Color/textura distinta por tipo de pared | requisito | 3 texturas en `assets/textures/`, mapeadas por tipo en `raycaster.rs` |
-| Rotación horizontal con mouse | 20 | `player.rs::update` usa `get_mouse_delta()` |
-| Disparo | 10 | Click izquierdo, `sprite::try_shoot_simple` |
-| Minimapa en esquina (no junto al mapa principal) | 10 | `minimap.rs`, esquina superior derecha |
-| Música de fondo en loop | 5 | `audio.rs`, `update_stream()` cada frame + auto-replay |
-| Efectos de sonido | 10 | Disparo y muerte de enemigo |
-| Animación de sprite | 20 | 2 frames de idle + frame de impacto en `sprite.rs` |
-| Pantalla de bienvenida | 5 | `draw_menu` en `main.rs` |
-| Selección de múltiples niveles | 10 | Flechas en el menú, 2 niveles |
-| Pantalla de éxito | 10 | Al pisar la celda `S` del mapa |
-| Estética del nivel | subjetivo (0-30) | Diseño de mapas + shading por distancia |
