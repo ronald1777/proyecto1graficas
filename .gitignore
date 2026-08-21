@@ -1,0 +1,6 @@
+target/
+psp/
+*.o
+*.elf
+*.prx
+EBOOT.PBP
